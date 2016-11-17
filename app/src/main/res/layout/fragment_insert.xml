@@ -1,0 +1,283 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.destroinc.medicinereminder.InsertFragment"
+    android:weightSum="0"
+    android:background="@drawable/home"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/insertmedicine"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/cardview_light_background"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textIsSelectable="false"
+                android:layout_weight="0"
+                android:paddingBottom="10dp" />
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardElevation="@dimen/cardview_default_radius"
+                card_view:contentPadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/medicinename"
+                            android:id="@+id/textView4"
+                            android:textSize="25sp"
+                            android:textColor="@color/accent_material_light" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editText_name"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardElevation="@dimen/cardview_default_radius"
+                card_view:contentPadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/addimage"
+                        android:id="@+id/addimage"
+                        android:textSize="25sp"
+                        android:textColor="@color/accent_material_light" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/medicineimage"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:layout_weight="2"
+                            android:src="@drawable/placeholder"/>
+
+                        <ImageButton
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/takepicture"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_camera_icon"
+                            android:alpha="1"
+                            android:backgroundTint="@color/cardview_light_background" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardElevation="@dimen/cardview_default_radius"
+                card_view:contentPadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/time"
+                        android:id="@+id/textView3"
+                        android:textSize="25sp"
+                        android:layout_weight="0"
+                        android:textColor="@color/accent_material_light" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/morning"
+                            android:id="@+id/checkBox_morning"
+                            android:textSize="18sp"
+                            android:textAppearance="@style/TextAppearance.AppCompat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/noon"
+                            android:textSize="18sp"
+                            android:id="@+id/checkBox_noon"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/afternoon"
+                            android:textSize="18sp"
+                            android:id="@+id/checkBox_afternoon"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/night"
+                            android:textSize="18sp"
+                            android:id="@+id/checkBox_night"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardElevation="@dimen/cardview_default_radius"
+                card_view:contentPadding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/quantity"
+                        android:id="@+id/textView5"
+                        android:textSize="25sp"
+                        android:layout_weight="0"
+                        android:textColor="@color/accent_material_light" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/one"
+                            android:textSize="18sp"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/two"
+                            android:textSize="18sp"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/three"
+                            android:textSize="18sp"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/four"
+                            android:textSize="18sp"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/insertButton"
+                android:id="@+id/insert"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
